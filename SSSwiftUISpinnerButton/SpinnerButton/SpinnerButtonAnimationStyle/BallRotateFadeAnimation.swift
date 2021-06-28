@@ -10,34 +10,38 @@ import SwiftUI
 public struct BallRotateFadeAnimation: View {
     
     // MARK: Binding Variables
+    /// State of button animation
     @Binding private var isAnimating: Bool
     
-    // MARK: Variables
+    // MARK: Public Variables
+    /// Change the number of animating shapes
     public let count: UInt
+    
+    /// Change the shape from ball to any given view
     public let content: AnyView
     
     // MARK: Init Methods
-    
-    /// `Content`: Change shape of animating ball
-    /// `isAnimating`: State of animation view
-    /// `count`: Change number of of animating ball
-    /// `size`: Change size of animating ball
+    /// - Parameters:
+    ///   - isAnimating: Binding to determine if button is animating or not
+    ///   - count: Change the number of animating shapes
+    ///   - size: Change the size of animating shapes
+    ///   - content: Change the shape from ball to any given view
     public init<Content: View>(isAnimating: Binding<Bool>, count: UInt = 6, size: CGFloat = 8, content: () -> Content) {
         self._isAnimating = isAnimating
         self.count = count
         self.content = AnyView(content().frame(width: size, height: size))
     }
     
-    /// `Content`: Default shape of animating ball to circle if not given
-    /// `isAnimating`: State of animation view
-    /// `count`: Change number of of animating ball
-    /// `size`: Change size of animating ball
+    /// - Parameters:
+    ///   - isAnimating: Binding to determine if button is animating or not
+    ///   - count: Change the number of animating balls
+    ///   - size: Change the size of animating balls
     public init(isAnimating: Binding<Bool>, count: UInt = 6, size: CGFloat = 8) {
         self.init(isAnimating: isAnimating, count: count) {
             Circle().frame(width: size, height: size)
         }
     }
-
+    
     public var body: some View {
         GeometryReader { geometry in
             ForEach(0..<Int(count)) { index in

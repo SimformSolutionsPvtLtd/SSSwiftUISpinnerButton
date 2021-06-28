@@ -10,17 +10,21 @@ import SwiftUI
 public struct BallSpinChaseAnimation: View {
     
     // MARK: Binding Variables
+    /// State of button animation
     @Binding private var isAnimating: Bool
     
-    // MARK: Variables
+    // MARK: Public Variables
+    /// Change the number of animating ball
     public let count: UInt
+    
+    /// Change the size of animating ball
     public let size: CGFloat
     
-    // MARK: Init Methods
-    
-    /// `isAnimating`: State of animation view
-    /// `count`: Change number of balls
-    /// `size`: Change size of animating balls
+    // MARK: Init Method
+    /// - Parameters:
+    ///   - isAnimating: Binding to determine if button is animating or not
+    ///   - count: Change the number of animating ball
+    ///   - size: Change the size of animating ball
     public init(isAnimating: Binding<Bool>, count: UInt = 8, size: CGFloat = 16) {
         self._isAnimating = isAnimating
         self.count = count

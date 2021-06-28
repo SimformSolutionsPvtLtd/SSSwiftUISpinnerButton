@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: Spinner Button Animation Style
+/// Spinner Button Animation Style
 public enum SpinnerButtonAnimationStyle {
     case arcsRotateChase(count: UInt = 3, width: CGFloat = 2, spacing: CGFloat = 1)
     case ballSpinChase(count: UInt = 8, size: CGFloat = 16)
@@ -15,15 +15,16 @@ public enum SpinnerButtonAnimationStyle {
     case lineSpinFade(count: UInt = 8, width: CGFloat = 0)
 }
 
-// MARK: Spinner Button Animation View
+/// Spinner Button Animation View
 public struct SpinnerButtonAnimationView: View {
 
     // MARK: State Variables
+    /// State of button animation
     @State var isAnimating: Bool = false
     
     // MARK: Variables
+    /// Spinner animation style: arcsRotateChase, ballSpinChase, ballRotateFade or lineSpinFade
     private let animationStyle: SpinnerButtonAnimationStyle
-    private let buttonViewStyle: SpinnerButtonViewStyle
 
     public var body: some View {
         Group {
@@ -60,8 +61,9 @@ public struct SpinnerButtonAnimationView: View {
     }
 
     // MARK: Init Method
-    public init(animationStyle: SpinnerButtonAnimationStyle = .arcsRotateChase(), buttonViewStyle: SpinnerButtonViewStyle) {
+    /// Add animation view in button based on selected animation style
+    /// - Parameter animationStyle: Select button spinning animation style
+    public init(animationStyle: SpinnerButtonAnimationStyle = .arcsRotateChase()) {
         self.animationStyle = animationStyle
-        self.buttonViewStyle = buttonViewStyle
     }
 }

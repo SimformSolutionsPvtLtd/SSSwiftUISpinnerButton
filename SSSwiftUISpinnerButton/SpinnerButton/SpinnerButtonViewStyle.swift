@@ -11,65 +11,57 @@ public struct SpinnerButtonViewStyle {
     
     // MARK: Variables
     
-    /// `width`: Width of Button
-    /// Default width is set to 300
+    /// Width of button - default width is set to 300
     public var width: CGFloat = 300
     
-    /// `height`: Height of Button
-    /// Default height is set to 50
+    /// height of button - default height is set to 50
     public var height: CGFloat = 50
     
-    /// `cornerRadius`: Corner radius of Button
-    /// Default cornerRadius is set to 0
+    /// Corner radius of button - default cornerRadius is set to 0
     public var cornerRadius: CGFloat = 0
     
-    /// `backgroundColor`: Background color of Button
-    /// Default backgroundColor is set to primary
+    /// Background color of button - default backgroundColor is set to primary
     public var backgroundColor: Color = .primary
     
-    /// `spinningButtonBackgroundColor`: Background color of Button while button is animating/ spinning
-    /// Default spinningButtonBackgroundColor is set to primary
+    /// Background color of button when button is animating / spinning - default spinningButtonBackgroundColor is set to primary
     public var spinningButtonBackgroundColor: Color = .primary
     
-    /// `spinningStrokeColor`: Spinning Stroke Color of Button
-    /// Default spinningStrokeColor is set to white
+    /// Spinning stroke color of button - default spinningStrokeColor is set to white
     public var spinningStrokeColor: Color = Color.white
     
-    /// `borderColor`: Border color of Button
-    /// Default borderColor is set to clear
+    /// Border color of button - default borderColor is set to clear
     public var borderColor: Color = Color.clear
     
-    /// `borderWidth`: Border width of Button
-    /// Default borderWidth is set to 0
+    /// Border width of button - default borderWidth is set to 0
     public var borderWidth: CGFloat = 0
     
-    /// `gradient`: gradient of Button
+    /// Gradient of button
     public var gradient: LinearGradient?
     
-    /// `shadowColor`: Shadow color of Button
-    /// Default shadowColor is set to clear
+    /// Shadow color of button - default shadowColor is set to clear
     public var shadowColor: Color = Color.clear
     
-    /// `shadowRadius`: Shadow radius of Button
-    /// Default shadowRadius is set to 0
+    /// Shadow radius of button - default shadowRadius is set to 0
     public var shadowRadius: CGFloat = 0
     
-    /// `shadowOffset`: Shadow offset of Button
-    /// Default shadowOffset is set to zero
+    /// Shadow offset of button - default shadowOffset is set to zero
     public var shadowOffset: CGPoint = CGPoint.zero
     
     // MARK: Init Methods
+    /// Initialise to design button view
     public init() {
-    
+        
     }
     
     // MARK: Init method to add basic customisation to button
-    /// `width`: Width of Button
-    /// `height`: Height of Button
-    /// `cornerRadius`: Corner radius of Button
-    /// `backgroundColor`: Background color of Button
-    /// `spinningButtonBackgroundColor`: Background color of Button while button is animating/ spinning
-    /// `spinningStrokeColor`: Spinning Stroke Color of Button
+    /// Initialise to add basic custom design to button view
+    /// - Parameters:
+    ///   - width: Width of button
+    ///   - height: Height of button
+    ///   - cornerRadius: Corner radius of button
+    ///   - backgroundColor: Background color of button
+    ///   - spinningButtonBackgroundColor: Background color of button while button is animating / spinning
+    ///   - spinningStrokeColor: Spinning Stroke Color of button
     public init(width: CGFloat? = nil, height: CGFloat? = nil, cornerRadius: CGFloat? = nil, backgroundColor: Color? = nil, spinningButtonBackgroundColor: Color? = nil, spinningStrokeColor: Color? = nil) {
         self.width = width ?? 300
         self.height = height ?? 50

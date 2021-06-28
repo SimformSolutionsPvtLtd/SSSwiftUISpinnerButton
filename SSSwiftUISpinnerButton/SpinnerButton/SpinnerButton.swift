@@ -10,15 +10,32 @@ import SwiftUI
 public struct SpinnerButton<Content: View>: View {
     
     // MARK: Binding Variables
+    /// State of button animation
     @Binding var isButtonAnimating: Bool
     
     // MARK: Variables
-    var buttonStyle: SpinnerButtonViewStyle
-    let content: Content
-    var buttonAction: (() -> ())
-    var animationType: SpinnerButtonAnimationStyle?
+    
+    /// To change design of  button view
+    private var buttonStyle: SpinnerButtonViewStyle
+    
+    /// To add any view or content in button
+    private let content: Content
+    
+    /// Add action to be performed after button is tapped
+    private var buttonAction: (() -> ())
+    
+    /// Select button spinning animation type: arcsRotateChase, ballSpinChase, ballRotateFade or lineSpinFade
+    private var animationType: SpinnerButtonAnimationStyle?
     
     // MARK: Init Method
+    
+    /// Add spinner button with custom design and animation style
+    /// - Parameters:
+    ///   - buttonAction: Add action to be performed after button is tapped
+    ///   - isAnimating: Binding to determine if button is animating or not
+    ///   - buttonStyle: Change design of button view
+    ///   - animationType: Select button spinning animation type
+    ///   - builder: Add any view or content in button
     public init(buttonAction: @escaping () -> Void, isAnimating: Binding<Bool>, buttonStyle: SpinnerButtonViewStyle? = nil, animationType: SpinnerButtonAnimationStyle? = nil, @ViewBuilder builder: () -> Content) {
         content = builder()
         self._isButtonAnimating = isAnimating
@@ -71,7 +88,7 @@ public struct SpinnerButton<Content: View>: View {
                 
                 if isButtonAnimating {
                     /// On animating, add spinning animation to view
-                    SpinnerButtonAnimationView(animationStyle: animationType ?? .arcsRotateChase(), buttonViewStyle: buttonStyle)
+                    SpinnerButtonAnimationView(animationStyle: animationType ?? .arcsRotateChase())
                             .frame(width: buttonStyle.height / 2, height: buttonStyle.height / 2, alignment: .center)
                             .foregroundColor(buttonStyle.spinningStrokeColor)
                 } else {
@@ -87,7 +104,14 @@ public struct SpinnerButton<Content: View>: View {
         }
         /// Add custom frame size
         .frame(width: isButtonAnimating ? buttonStyle.height:buttonStyle.width, height: buttonStyle.height)
+        .buttonStyle(StaticButtonStyle())
         /// Disable view while animating
         .disabled(isButtonAnimating == true)
+    }
+}
+
+private struct StaticButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
     }
 }
