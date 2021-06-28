@@ -9,7 +9,12 @@
 /* Begin PBXBuildFile section */
 		AA7A48912689CD42003B3E71 /* SpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A48902689CD42003B3E71 /* SpinnerButton.swift */; };
 		AA7A48982689CD9E003B3E71 /* SpinnerButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A48972689CD9E003B3E71 /* SpinnerButtonViewStyle.swift */; };
+		AA7A48A82689DAC0003B3E71 /* BallRotateFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A48A02689DAC0003B3E71 /* BallRotateFadeAnimation.swift */; };
+		AA7A48A92689DAC0003B3E71 /* SpinnerButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A48A12689DAC0003B3E71 /* SpinnerButtonAnimationView.swift */; };
+		AA7A48AA2689DAC0003B3E71 /* ArcsRotateChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A48A22689DAC0003B3E71 /* ArcsRotateChaseAnimation.swift */; };
+		AA7A48AB2689DAC0003B3E71 /* BallSpinChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A48A32689DAC0003B3E71 /* BallSpinChaseAnimation.swift */; };
 		AA851B1526368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA851B1426368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift */; };
+		AA8DF8822689EE7700CF319D /* LineSpinFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8DF8812689EE7700CF319D /* LineSpinFadeAnimation.swift */; };
 		C2FE74BB25D6DABF005B5998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FE74BA25D6DABF005B5998 /* ContentView.swift */; };
 		C2FE74BD25D6DAC0005B5998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FE74BC25D6DAC0005B5998 /* Assets.xcassets */; };
 		C2FE74C025D6DAC0005B5998 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FE74BF25D6DAC0005B5998 /* Preview Assets.xcassets */; };
@@ -18,7 +23,12 @@
 /* Begin PBXFileReference section */
 		AA7A48902689CD42003B3E71 /* SpinnerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerButton.swift; sourceTree = "<group>"; };
 		AA7A48972689CD9E003B3E71 /* SpinnerButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerButtonViewStyle.swift; sourceTree = "<group>"; };
+		AA7A48A02689DAC0003B3E71 /* BallRotateFadeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallRotateFadeAnimation.swift; sourceTree = "<group>"; };
+		AA7A48A12689DAC0003B3E71 /* SpinnerButtonAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerButtonAnimationView.swift; sourceTree = "<group>"; };
+		AA7A48A22689DAC0003B3E71 /* ArcsRotateChaseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcsRotateChaseAnimation.swift; sourceTree = "<group>"; };
+		AA7A48A32689DAC0003B3E71 /* BallSpinChaseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallSpinChaseAnimation.swift; sourceTree = "<group>"; };
 		AA851B1426368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSSwiftUISpinnerButtonApp.swift; path = SSSwiftUISpinnerButton/SSSwiftUISpinnerButtonApp.swift; sourceTree = SOURCE_ROOT; };
+		AA8DF8812689EE7700CF319D /* LineSpinFadeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineSpinFadeAnimation.swift; sourceTree = "<group>"; };
 		C2FE74B525D6DABF005B5998 /* SSSwiftUISpinnerButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSwiftUISpinnerButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FE74BA25D6DABF005B5998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2FE74BC25D6DAC0005B5998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,11 +47,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA7A489F2689DAC0003B3E71 /* SpinnerButtonAnimationStyle */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A48A02689DAC0003B3E71 /* BallRotateFadeAnimation.swift */,
+				AA7A48A22689DAC0003B3E71 /* ArcsRotateChaseAnimation.swift */,
+				AA7A48A32689DAC0003B3E71 /* BallSpinChaseAnimation.swift */,
+				AA8DF8812689EE7700CF319D /* LineSpinFadeAnimation.swift */,
+			);
+			path = SpinnerButtonAnimationStyle;
+			sourceTree = "<group>";
+		};
 		AA93B8C4261C7C8900BAF7FD /* SpinnerButton */ = {
 			isa = PBXGroup;
 			children = (
+				AA7A489F2689DAC0003B3E71 /* SpinnerButtonAnimationStyle */,
 				AA7A48902689CD42003B3E71 /* SpinnerButton.swift */,
 				AA7A48972689CD9E003B3E71 /* SpinnerButtonViewStyle.swift */,
+				AA7A48A12689DAC0003B3E71 /* SpinnerButtonAnimationView.swift */,
 			);
 			path = SpinnerButton;
 			sourceTree = "<group>";
@@ -155,7 +178,12 @@
 				AA7A48912689CD42003B3E71 /* SpinnerButton.swift in Sources */,
 				AA7A48982689CD9E003B3E71 /* SpinnerButtonViewStyle.swift in Sources */,
 				C2FE74BB25D6DABF005B5998 /* ContentView.swift in Sources */,
+				AA7A48A82689DAC0003B3E71 /* BallRotateFadeAnimation.swift in Sources */,
+				AA8DF8822689EE7700CF319D /* LineSpinFadeAnimation.swift in Sources */,
+				AA7A48AA2689DAC0003B3E71 /* ArcsRotateChaseAnimation.swift in Sources */,
 				AA851B1526368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift in Sources */,
+				AA7A48AB2689DAC0003B3E71 /* BallSpinChaseAnimation.swift in Sources */,
+				AA7A48A92689DAC0003B3E71 /* SpinnerButtonAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
