@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C2FE74B925D6DABF005B5998 /* SSSwiftUISpinnerButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FE74B825D6DABF005B5998 /* SSSwiftUISpinnerButtonApp.swift */; };
+		AA7A48912689CD42003B3E71 /* SpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A48902689CD42003B3E71 /* SpinnerButton.swift */; };
+		AA7A48982689CD9E003B3E71 /* SpinnerButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7A48972689CD9E003B3E71 /* SpinnerButtonViewStyle.swift */; };
+		AA851B1526368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA851B1426368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift */; };
 		C2FE74BB25D6DABF005B5998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FE74BA25D6DABF005B5998 /* ContentView.swift */; };
 		C2FE74BD25D6DAC0005B5998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FE74BC25D6DAC0005B5998 /* Assets.xcassets */; };
 		C2FE74C025D6DAC0005B5998 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FE74BF25D6DAC0005B5998 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA7A48902689CD42003B3E71 /* SpinnerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerButton.swift; sourceTree = "<group>"; };
+		AA7A48972689CD9E003B3E71 /* SpinnerButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerButtonViewStyle.swift; sourceTree = "<group>"; };
+		AA851B1426368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSSwiftUISpinnerButtonApp.swift; path = SSSwiftUISpinnerButton/SSSwiftUISpinnerButtonApp.swift; sourceTree = SOURCE_ROOT; };
 		C2FE74B525D6DABF005B5998 /* SSSwiftUISpinnerButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSwiftUISpinnerButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2FE74B825D6DABF005B5998 /* SSSwiftUISpinnerButtonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSSwiftUISpinnerButtonApp.swift; sourceTree = "<group>"; };
 		C2FE74BA25D6DABF005B5998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2FE74BC25D6DAC0005B5998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2FE74BF25D6DAC0005B5998 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -33,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA93B8C4261C7C8900BAF7FD /* SpinnerButton */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A48902689CD42003B3E71 /* SpinnerButton.swift */,
+				AA7A48972689CD9E003B3E71 /* SpinnerButtonViewStyle.swift */,
+			);
+			path = SpinnerButton;
+			sourceTree = "<group>";
+		};
 		C2FE74AC25D6DABF005B5998 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +65,9 @@
 		C2FE74B725D6DABF005B5998 /* SSSwiftUISpinnerButton */ = {
 			isa = PBXGroup;
 			children = (
-				C2FE74B825D6DABF005B5998 /* SSSwiftUISpinnerButtonApp.swift */,
+				AA93B8C4261C7C8900BAF7FD /* SpinnerButton */,
 				C2FE74BA25D6DABF005B5998 /* ContentView.swift */,
+				AA851B1426368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift */,
 				C2FE74BC25D6DAC0005B5998 /* Assets.xcassets */,
 				C2FE74C125D6DAC0005B5998 /* Info.plist */,
 				C2FE74BE25D6DAC0005B5998 /* Preview Content */,
@@ -138,8 +152,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7A48912689CD42003B3E71 /* SpinnerButton.swift in Sources */,
+				AA7A48982689CD9E003B3E71 /* SpinnerButtonViewStyle.swift in Sources */,
 				C2FE74BB25D6DABF005B5998 /* ContentView.swift in Sources */,
-				C2FE74B925D6DABF005B5998 /* SSSwiftUISpinnerButtonApp.swift in Sources */,
+				AA851B1526368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +285,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SSSwiftUISpinnerButton/Preview Content\"";
+				DEVELOPMENT_TEAM = UH3C932562;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SSSwiftUISpinnerButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +307,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SSSwiftUISpinnerButton/Preview Content\"";
+				DEVELOPMENT_TEAM = UH3C932562;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SSSwiftUISpinnerButton/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
