@@ -16,12 +16,14 @@ public struct SpinnerButton<Content: View>: View {
     var buttonStyle: SpinnerButtonViewStyle
     let content: Content
     var buttonAction: (() -> ())
+    var animationType: SpinnerButtonAnimationStyle?
     
     // MARK: Init Method
-    public init(buttonAction: @escaping () -> Void, isAnimating: Binding<Bool>, buttonStyle: SpinnerButtonViewStyle? = nil, @ViewBuilder builder: () -> Content) {
+    public init(buttonAction: @escaping () -> Void, isAnimating: Binding<Bool>, buttonStyle: SpinnerButtonViewStyle? = nil, animationType: SpinnerButtonAnimationStyle? = nil, @ViewBuilder builder: () -> Content) {
         content = builder()
         self._isButtonAnimating = isAnimating
         self.buttonStyle = buttonStyle ?? SpinnerButtonViewStyle()
+        self.animationType = animationType
         self.buttonAction = buttonAction
     }
     
@@ -69,6 +71,9 @@ public struct SpinnerButton<Content: View>: View {
                 
                 if isButtonAnimating {
                     /// On animating, add spinning animation to view
+                    SpinnerButtonAnimationView(animationStyle: animationType ?? .arcsRotateChase(), buttonViewStyle: buttonStyle)
+                            .frame(width: buttonStyle.height / 2, height: buttonStyle.height / 2, alignment: .center)
+                            .foregroundColor(buttonStyle.spinningStrokeColor)
                 } else {
                     /// On stopping animation, show animation in user-added content
                     VStack {
