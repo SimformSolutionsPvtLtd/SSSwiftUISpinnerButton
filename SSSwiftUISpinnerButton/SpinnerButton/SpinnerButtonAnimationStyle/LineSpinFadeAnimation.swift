@@ -10,17 +10,21 @@ import SwiftUI
 public struct LineSpinFadeAnimation: View {
     
     // MARK: Binding Variables
+    /// State of button animation
     @Binding private var isAnimating: Bool
     
-    // MARK: Variables
+    // MARK: Public Variables
+    /// Change the number of animating line
     public let count: UInt
+    
+    /// Change the width of animating line
     public let width: CGFloat
     
-    // MARK: Init Methods
-    
-    /// `isAnimating`: State of animation view
-    /// `count`: Change number of lines
-    /// `width`: Change width of animating line
+    // MARK: Init Method
+    /// - Parameters:
+    ///   - isAnimating: Binding to determine if button is animating or not
+    ///   - count: Change the number of animating line
+    ///   - width: Change the width of animating line
     public init(isAnimating: Binding<Bool>, count: UInt = 8, width: CGFloat = -1) {
         self._isAnimating = isAnimating
         self.count = count

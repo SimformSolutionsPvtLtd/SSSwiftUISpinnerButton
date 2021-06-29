@@ -10,19 +10,25 @@ import SwiftUI
 public struct ArcsRotateChaseAnimation: View {
     
     // MARK: Binding Variables
+    /// State of button animation
     @Binding private var isAnimating: Bool
     
-    // MARK: Variables
+    // MARK: Public Variables
+    /// Change the number of animating arc
     public let count: UInt
+    
+    /// Change the width of animating arc
     public let width: CGFloat
+    
+    /// Change the spacing between animating arcs
     public let spacing: CGFloat
     
-    // MARK: Init Methods
-    
-    /// `isAnimating`: State of animation view
-    /// `count`: Change number of arcs
-    /// `width`: Change width of animating arcs
-    /// `spacing`: Add spacing between animating arcs
+    // MARK: Init Method
+    /// - Parameters:
+    ///   - isAnimating: Binding to determine if button is animating or not
+    ///   - count: Change number of animating arc
+    ///   - width: Change width of animating arc
+    ///   - spacing: Add spacing between animating arcs
     public init(isAnimating: Binding<Bool>, count: UInt = 3, width: CGFloat = 2, spacing: CGFloat = 1) {
         self._isAnimating = isAnimating
         self.count = count
