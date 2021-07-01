@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   spec.summary      = "Button with different spinner animation styles."
   spec.description  = "SpinnerButton is a custom button with different spinner animation styles."
   spec.homepage     = "https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton"
-  #spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Chaitali Lad" => "chaitali.l@simformsolutions.com" }
   spec.platform     = :ios
   spec.ios.deployment_target = "13.0"

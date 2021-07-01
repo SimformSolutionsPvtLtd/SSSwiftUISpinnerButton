@@ -17,58 +17,58 @@ struct ContentView: View {
     @State var isCustomShapeSpinChaseButtonAnimating: Bool = false
     
     // MARK: Variables for button customisation
-    private var buttonStyleWithBasicDesign = SpinnerButtonViewStyle(width: 300, height: 50, cornerRadius: 5, backgroundColor: .black, spinningButtonBackgroundColor: .black, spinningStrokeColor: .white)
+    private var buttonStyleWithBasicDesign = SpinnerButtonViewStyle(width: 300, height: 50, cornerRadius: 5, backgroundColor: Color(hex: Colors.pink.rawValue), spinningButtonBackgroundColor: Color(hex: Colors.pink.rawValue), spinningStrokeColor: .white)
     
     private var buttonStyleWithBorderAndShadow: SpinnerButtonViewStyle {
         var buttonStyle = SpinnerButtonViewStyle()
         buttonStyle.cornerRadius = buttonStyle.height / 2
-        buttonStyle.backgroundColor = .green
-        buttonStyle.spinningButtonBackgroundColor = .green
-        buttonStyle.spinningStrokeColor = .black
-        buttonStyle.borderWidth = 1.5
-        buttonStyle.borderColor = .yellow
-        buttonStyle.shadowColor = .yellow
-        buttonStyle.shadowRadius = 10
-        buttonStyle.shadowOffset = CGPoint(x: 0, y: 0)
+        buttonStyle.backgroundColor = Color(hex: Colors.darkBlue.rawValue)
+        buttonStyle.spinningButtonBackgroundColor = Color(hex: Colors.darkBlue.rawValue)
+        buttonStyle.spinningStrokeColor = .white
+        buttonStyle.borderWidth = 2
+        buttonStyle.borderColor = .white
+        buttonStyle.shadowColor = Color(hex: Colors.darkBlue.rawValue)
+        buttonStyle.shadowRadius = 2
+        buttonStyle.shadowOffset = CGPoint(x: 0, y: 2)
         return buttonStyle
     }
     
     private var buttonStyleWithLinearGradient: SpinnerButtonViewStyle {
         var buttonStyle = SpinnerButtonViewStyle()
-        buttonStyle.height = 65
+        buttonStyle.height = 50
         buttonStyle.cornerRadius = buttonStyle.height / 2
         buttonStyle.backgroundColor = .green
-        buttonStyle.spinningButtonBackgroundColor = .green
         buttonStyle.spinningStrokeColor = .white
         buttonStyle.gradient = LinearGradient(
-            gradient: .init(colors: [.blue, .purple, .red]),
-            startPoint: .trailing,
-            endPoint: .leading)
+            gradient: .init(colors: [Color(hex: Colors.darkGreen.rawValue),Color(hex: Colors.lightGreen.rawValue),Color(hex: Colors.lightBlue.rawValue)]),
+            startPoint: .leading,
+            endPoint: .trailing)
         return buttonStyle
     }
     
     private var buttonStyleWithChangedBackground: SpinnerButtonViewStyle {
         var buttonStyle = SpinnerButtonViewStyle()
-        buttonStyle.backgroundColor = .white
-        buttonStyle.spinningButtonBackgroundColor = .red
+        buttonStyle.backgroundColor = Color(hex: Colors.blue.rawValue)
+        buttonStyle.spinningButtonBackgroundColor = .white
         buttonStyle.borderWidth = 1.5
-        buttonStyle.borderColor = .red
-        buttonStyle.spinningStrokeColor = .white
+        buttonStyle.borderColor = Color(hex: Colors.blue.rawValue)
+        buttonStyle.spinningStrokeColor = Color(hex: Colors.blue.rawValue)
         return buttonStyle
     }
     
     private var buttonStyleWithLesserWidth: SpinnerButtonViewStyle {
         var buttonStyle = SpinnerButtonViewStyle()
-        buttonStyle.width = 200
-        buttonStyle.height = 75
-        buttonStyle.cornerRadius = buttonStyle.height / 3
-        buttonStyle.backgroundColor = .yellow
-        buttonStyle.spinningButtonBackgroundColor = .yellow
+        buttonStyle.width = 280
+        buttonStyle.height = 60
+        buttonStyle.cornerRadius = 5
+        buttonStyle.backgroundColor = Color(hex: Colors.skyBlue.rawValue)
+        buttonStyle.spinningButtonBackgroundColor = Color(hex: Colors.skyBlue.rawValue)
         return buttonStyle
     }
     
     var body: some View {
         VStack(spacing: 30) {
+            
             /// Line Spin Fade Spinner Button
             SpinnerButton(buttonAction: {
                 /// Action to perform
@@ -89,22 +89,40 @@ struct ContentView: View {
                 .foregroundColor(.white)
             }
             
-            /// Ball Rotate Fade Spinner Button
+            /// Ball Spin Chase Spinner Button
             SpinnerButton(buttonAction: {
                 /// Action to perform
                 
                 /// Stop animation by toggling value of state variable
-                /// Added delay of 2 seconds
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                    isBallRotateFadeButtonAnimating.toggle()
+                /// Added delay of 4 seconds
+                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                    isBallSpinChaseButtonAnimating.toggle()
                 }
-            }, isAnimating: $isBallRotateFadeButtonAnimating, buttonStyle: buttonStyleWithBorderAndShadow, animationType: SpinnerButtonAnimationStyle.ballSpinChase(count: 7, size: 7)) {
+            }, isAnimating: $isBallSpinChaseButtonAnimating, buttonStyle: buttonStyleWithChangedBackground, animationType: .ballRotateFade(count: 5, size: 7)) {
                 /// Add content in button
-                ZStack {
-                    Text("Ball Rotate Fade")
-                        .fontWeight(.medium)
+                HStack {
+                    Text("Ball Spin Chase")
+                        .fontWeight(.bold)
                 }
-                .foregroundColor(.black)
+                .foregroundColor(.white)
+            }
+
+            /// Custom Spin Chase Spinner Button
+            SpinnerButton(buttonAction: {
+                /// Action to perform
+
+                /// Stop animation by toggling value of state variable
+                /// Added delay of 4 seconds
+                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                    isCustomShapeSpinChaseButtonAnimating.toggle()
+                }
+            }, isAnimating: $isCustomShapeSpinChaseButtonAnimating, buttonStyle: buttonStyleWithLesserWidth, animationType: SpinnerButtonAnimationStyle.ballRotateFade(count: 3, content: AnyView(Text("🔥").fixedSize()))) {
+                /// Add content in button
+                HStack {
+                    Text("Custom Spin Chase")
+                        .fontWeight(.bold)
+                }
+                .foregroundColor(.white)
             }
             
             /// Arcs Rotate Chase Spinner Button
@@ -120,46 +138,29 @@ struct ContentView: View {
                 /// Add content in button
                 HStack {
                     Text("Arcs Rotate Chase")
-                        .fontWeight(.semibold)
+                        .fontWeight(.bold)
                 }
                 .foregroundColor(.white)
             }
             
-            /// Ball Spin Chase Spinner Button
+            /// Ball Rotate Fade Spinner Button
             SpinnerButton(buttonAction: {
                 /// Action to perform
                 
                 /// Stop animation by toggling value of state variable
-                /// Added delay of 4 seconds
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-                    isBallSpinChaseButtonAnimating.toggle()
+                /// Added delay of 2 seconds
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    isBallRotateFadeButtonAnimating.toggle()
                 }
-            }, isAnimating: $isBallSpinChaseButtonAnimating, buttonStyle: buttonStyleWithChangedBackground, animationType: SpinnerButtonAnimationStyle.ballRotateFade(count: 5, size: 7)) {
+            }, isAnimating: $isBallRotateFadeButtonAnimating, buttonStyle: buttonStyleWithBorderAndShadow, animationType: SpinnerButtonAnimationStyle.ballSpinChase(count: 7, size: 7)) {
                 /// Add content in button
-                HStack {
-                    Text("Ball Spin Chase")
-                }
-                .foregroundColor(.red)
-            }
-
-            /// Custom Spin Chase Spinner Button
-            SpinnerButton(buttonAction: {
-                /// Action to perform
-
-                /// Stop animation by toggling value of state variable
-                /// Added delay of 4 seconds
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-                    isCustomShapeSpinChaseButtonAnimating.toggle()
-                }
-            }, isAnimating: $isCustomShapeSpinChaseButtonAnimating, buttonStyle: buttonStyleWithLesserWidth, animationType: SpinnerButtonAnimationStyle.ballRotateFade(count: 3, content: AnyView(Text("🔥").fixedSize()))) {
-                /// Add content in button
-                HStack {
-                    Text("Custom Spin Chase using emoji 🔥")
+                ZStack {
+                    Text("Ball Rotate Fade")
                         .fontWeight(.bold)
-                        .padding(15)
                 }
-                .foregroundColor(.orange)
+                .foregroundColor(.white)
             }
+            
         }
         /// Disable view if any button is animating
         .disabled(isLineSpinFadeButtonAnimating == true || isBallRotateFadeButtonAnimating == true || isArcRotateFadeButtonAnimating == true || isBallSpinChaseButtonAnimating == true || isCustomShapeSpinChaseButtonAnimating == true)
