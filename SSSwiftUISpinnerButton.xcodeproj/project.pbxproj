@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA2A4948268CC92B00189154 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2A4947268CC92A00189154 /* Color+Extension.swift */; };
+		AA2A494A268CC97400189154 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2A4949268CC97400189154 /* Enumerations.swift */; };
+		AA851B1526368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA851B1426368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift */; };
+		AABAAF93268B510F009D2275 /* SpinnerButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAAF8B268B510F009D2275 /* SpinnerButtonAnimationView.swift */; };
+		AABAAF94268B510F009D2275 /* SpinnerButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAAF8C268B510F009D2275 /* SpinnerButtonViewStyle.swift */; };
+		AABAAF95268B510F009D2275 /* BallRotateFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAAF8E268B510F009D2275 /* BallRotateFadeAnimation.swift */; };
+		AABAAF96268B510F009D2275 /* ArcsRotateChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAAF8F268B510F009D2275 /* ArcsRotateChaseAnimation.swift */; };
+		AABAAF97268B510F009D2275 /* BallSpinChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAAF90268B510F009D2275 /* BallSpinChaseAnimation.swift */; };
+		AABAAF98268B510F009D2275 /* LineSpinFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAAF91268B510F009D2275 /* LineSpinFadeAnimation.swift */; };
+		AABAAF99268B510F009D2275 /* SpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABAAF92268B510F009D2275 /* SpinnerButton.swift */; };
+		C2FE74BB25D6DABF005B5998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FE74BA25D6DABF005B5998 /* ContentView.swift */; };
+		C2FE74BD25D6DAC0005B5998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FE74BC25D6DAC0005B5998 /* Assets.xcassets */; };
+		C2FE74C025D6DAC0005B5998 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2FE74BF25D6DAC0005B5998 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AAB82F19268B36A200C8FF49 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA2A4947268CC92A00189154 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		AA2A4949268CC97400189154 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		AA851B1426368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSSwiftUISpinnerButtonApp.swift; path = SSSwiftUISpinnerButton/SSSwiftUISpinnerButtonApp.swift; sourceTree = SOURCE_ROOT; };
+		AABAAF8B268B510F009D2275 /* SpinnerButtonAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerButtonAnimationView.swift; sourceTree = "<group>"; };
+		AABAAF8C268B510F009D2275 /* SpinnerButtonViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerButtonViewStyle.swift; sourceTree = "<group>"; };
+		AABAAF8E268B510F009D2275 /* BallRotateFadeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallRotateFadeAnimation.swift; sourceTree = "<group>"; };
+		AABAAF8F268B510F009D2275 /* ArcsRotateChaseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcsRotateChaseAnimation.swift; sourceTree = "<group>"; };
+		AABAAF90268B510F009D2275 /* BallSpinChaseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallSpinChaseAnimation.swift; sourceTree = "<group>"; };
+		AABAAF91268B510F009D2275 /* LineSpinFadeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSpinFadeAnimation.swift; sourceTree = "<group>"; };
+		AABAAF92268B510F009D2275 /* SpinnerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerButton.swift; sourceTree = "<group>"; };
+		C2FE74B525D6DABF005B5998 /* SSSwiftUISpinnerButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSSwiftUISpinnerButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2FE74BA25D6DABF005B5998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2FE74BC25D6DAC0005B5998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2FE74BF25D6DAC0005B5998 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2FE74C125D6DAC0005B5998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2FE74B225D6DABF005B5998 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA2A494B268CC97C00189154 /* HelperClass */ = {
+			isa = PBXGroup;
+			children = (
+				AA2A4947268CC92A00189154 /* Color+Extension.swift */,
+				AA2A4949268CC97400189154 /* Enumerations.swift */,
+			);
+			path = HelperClass;
+			sourceTree = "<group>";
+		};
+		AABAAF8A268B510F009D2275 /* SpinnerButton */ = {
+			isa = PBXGroup;
+			children = (
+				AABAAF92268B510F009D2275 /* SpinnerButton.swift */,
+				AABAAF8B268B510F009D2275 /* SpinnerButtonAnimationView.swift */,
+				AABAAF8C268B510F009D2275 /* SpinnerButtonViewStyle.swift */,
+				AABAAF8D268B510F009D2275 /* SpinnerButtonAnimationStyle */,
+			);
+			path = SpinnerButton;
+			sourceTree = "<group>";
+		};
+		AABAAF8D268B510F009D2275 /* SpinnerButtonAnimationStyle */ = {
+			isa = PBXGroup;
+			children = (
+				AABAAF8E268B510F009D2275 /* BallRotateFadeAnimation.swift */,
+				AABAAF8F268B510F009D2275 /* ArcsRotateChaseAnimation.swift */,
+				AABAAF90268B510F009D2275 /* BallSpinChaseAnimation.swift */,
+				AABAAF91268B510F009D2275 /* LineSpinFadeAnimation.swift */,
+			);
+			path = SpinnerButtonAnimationStyle;
+			sourceTree = "<group>";
+		};
+		C2FE74AC25D6DABF005B5998 = {
+			isa = PBXGroup;
+			children = (
+				C2FE74B725D6DABF005B5998 /* SSSwiftUISpinnerButton */,
+				AABAAF8A268B510F009D2275 /* SpinnerButton */,
+				C2FE74B625D6DABF005B5998 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2FE74B625D6DABF005B5998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2FE74B525D6DABF005B5998 /* SSSwiftUISpinnerButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2FE74B725D6DABF005B5998 /* SSSwiftUISpinnerButton */ = {
+			isa = PBXGroup;
+			children = (
+				AA2A494B268CC97C00189154 /* HelperClass */,
+				C2FE74BA25D6DABF005B5998 /* ContentView.swift */,
+				AA851B1426368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift */,
+				C2FE74BC25D6DAC0005B5998 /* Assets.xcassets */,
+				C2FE74C125D6DAC0005B5998 /* Info.plist */,
+				C2FE74BE25D6DAC0005B5998 /* Preview Content */,
+			);
+			path = SSSwiftUISpinnerButton;
+			sourceTree = "<group>";
+		};
+		C2FE74BE25D6DAC0005B5998 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C2FE74BF25D6DAC0005B5998 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2FE74B425D6DABF005B5998 /* SSSwiftUISpinnerButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2FE74C425D6DAC0005B5998 /* Build configuration list for PBXNativeTarget "SSSwiftUISpinnerButton" */;
+			buildPhases = (
+				C2FE74B125D6DABF005B5998 /* Sources */,
+				C2FE74B225D6DABF005B5998 /* Frameworks */,
+				C2FE74B325D6DABF005B5998 /* Resources */,
+				AAB82F19268B36A200C8FF49 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSSwiftUISpinnerButton;
+			productName = SSSwiftUISpinnerButton;
+			productReference = C2FE74B525D6DABF005B5998 /* SSSwiftUISpinnerButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2FE74AD25D6DABF005B5998 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					C2FE74B425D6DABF005B5998 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = C2FE74B025D6DABF005B5998 /* Build configuration list for PBXProject "SSSwiftUISpinnerButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2FE74AC25D6DABF005B5998;
+			productRefGroup = C2FE74B625D6DABF005B5998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2FE74B425D6DABF005B5998 /* SSSwiftUISpinnerButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2FE74B325D6DABF005B5998 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2FE74C025D6DAC0005B5998 /* Preview Assets.xcassets in Resources */,
+				C2FE74BD25D6DAC0005B5998 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2FE74B125D6DABF005B5998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABAAF98268B510F009D2275 /* LineSpinFadeAnimation.swift in Sources */,
+				AA2A4948268CC92B00189154 /* Color+Extension.swift in Sources */,
+				C2FE74BB25D6DABF005B5998 /* ContentView.swift in Sources */,
+				AABAAF99268B510F009D2275 /* SpinnerButton.swift in Sources */,
+				AA851B1526368C2900BF3B11 /* SSSwiftUISpinnerButtonApp.swift in Sources */,
+				AABAAF94268B510F009D2275 /* SpinnerButtonViewStyle.swift in Sources */,
+				AABAAF96268B510F009D2275 /* ArcsRotateChaseAnimation.swift in Sources */,
+				AABAAF97268B510F009D2275 /* BallSpinChaseAnimation.swift in Sources */,
+				AABAAF95268B510F009D2275 /* BallRotateFadeAnimation.swift in Sources */,
+				AABAAF93268B510F009D2275 /* SpinnerButtonAnimationView.swift in Sources */,
+				AA2A494A268CC97400189154 /* Enumerations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2FE74C225D6DAC0005B5998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2FE74C325D6DAC0005B5998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2FE74C525D6DAC0005B5998 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SSSwiftUISpinnerButton/Preview Content\"";
+				DEVELOPMENT_TEAM = UH3C932562;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SSSwiftUISpinnerButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.SSSwiftUISpinnerButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2FE74C625D6DAC0005B5998 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SSSwiftUISpinnerButton/Preview Content\"";
+				DEVELOPMENT_TEAM = UH3C932562;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SSSwiftUISpinnerButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.simform.SSSwiftUISpinnerButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2FE74B025D6DABF005B5998 /* Build configuration list for PBXProject "SSSwiftUISpinnerButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FE74C225D6DAC0005B5998 /* Debug */,
+				C2FE74C325D6DAC0005B5998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2FE74C425D6DAC0005B5998 /* Build configuration list for PBXNativeTarget "SSSwiftUISpinnerButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2FE74C525D6DAC0005B5998 /* Debug */,
+				C2FE74C625D6DAC0005B5998 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2FE74AD25D6DABF005B5998 /* Project object */;
+}
