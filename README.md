@@ -1,4 +1,4 @@
-<a href="https://www.simform.com/"><img src="https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton/blob/master/simformBanner.png"></a>
+<a href="https://www.simform.com/"><img src="https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton/blob/main/simformBanner.png"></a>
 
 # SSSwiftUISpinnerButton
 
@@ -11,7 +11,7 @@ SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spin
 [![License][license-image]][license-url]
 [![PRs Welcome][PR-image]][PR-url]
 
-![Alt text](https://github.com/simformsolutions/SSSwiftUISpinnerButton/blob/master/SSSwiftUISpinnerButton.gif?raw=true)
+![Alt text](https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton/blob/main/SSSwiftUISpinnerButton.gif?raw=true)
 
 # Features!
   - Various spinner animation styles
@@ -106,7 +106,7 @@ SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spin
 #  Meta
 -    Distributed under the MIT license. See LICENSE for more information.
 
-# Inspired 
+# Inspired by: 
 -   Spinner animations inspired from [iActivityIndicator](https://github.com/MojtabaHs/iActivityIndicator)
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
