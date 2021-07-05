@@ -1,0 +1,6 @@
+framework module SSSwiftUISpinnerButton {
+  umbrella header "SSSwiftUISpinnerButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
