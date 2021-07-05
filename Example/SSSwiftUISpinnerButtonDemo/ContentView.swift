@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SSSwiftUISpinnerButton
 
 struct ContentView: View {
     
@@ -74,8 +75,8 @@ struct ContentView: View {
                 /// Action to perform
                 
                 /// Stop animation by toggling value of state variable
-                /// Added delay of 5 seconds
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                /// Added delay of 2 seconds
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     isLineSpinFadeButtonAnimating.toggle()
                 }
             }, isAnimating: $isLineSpinFadeButtonAnimating, buttonStyle: buttonStyleWithBasicDesign, animationType: SpinnerButtonAnimationStyle.lineSpinFade(count: 8, width: 0)) {
@@ -94,8 +95,8 @@ struct ContentView: View {
                 /// Action to perform
                 
                 /// Stop animation by toggling value of state variable
-                /// Added delay of 4 seconds
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                /// Added delay of 2 seconds
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     isBallSpinChaseButtonAnimating.toggle()
                 }
             }, isAnimating: $isBallSpinChaseButtonAnimating, buttonStyle: buttonStyleWithChangedBackground, animationType: .ballRotateFade(count: 5, size: 7)) {
@@ -112,8 +113,8 @@ struct ContentView: View {
                 /// Action to perform
 
                 /// Stop animation by toggling value of state variable
-                /// Added delay of 4 seconds
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
+                /// Added delay of 2 seconds
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     isCustomShapeSpinChaseButtonAnimating.toggle()
                 }
             }, isAnimating: $isCustomShapeSpinChaseButtonAnimating, buttonStyle: buttonStyleWithLesserWidth, animationType: SpinnerButtonAnimationStyle.ballRotateFade(count: 3, content: AnyView(Text("🔥").fixedSize()))) {

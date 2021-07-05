@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17171DF024650A170FB16827056F1641 /* BallSpinChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B1F0D8BBA4F7EE3655E8BEBB1DFDF /* BallSpinChaseAnimation.swift */; };
+		1CA7FE270EE7AB3BB8EF93B960B09935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		28497D1CB9006BBE28F13BF2F5BC1F7B /* BallRotateFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC0556FDD13070815C62F0D9933B69D /* BallRotateFadeAnimation.swift */; };
+		32ED36F6CD7EA11C9AF0DE99C722E7C4 /* SSSwiftUISpinnerButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D72B62FC9FC70DC4EC9B051ADC6C66A /* SSSwiftUISpinnerButton-dummy.m */; };
+		733BD72A392B56C1B9E9AA5E6AF41267 /* SpinnerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5014E674D41833C1D428CA893CB7072 /* SpinnerButton.swift */; };
+		7CC1478F67D30393EDDB89B261E94525 /* SpinnerButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BBDB66D3A953CB43C6EFECCEB30844 /* SpinnerButtonViewStyle.swift */; };
+		A311B480923931DC744EBB27C7B31313 /* SSSwiftUISpinnerButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 638BB588EDBB08D5AFD1958D1AEBAF9A /* SSSwiftUISpinnerButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B39098035928BB870C4117F59B4D20D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B44D9EE8797DE058D317B9B27DEB09CC /* Pods-SSSwiftUISpinnerButtonDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C43A0634462B0D75D9D102F2B495B1F1 /* Pods-SSSwiftUISpinnerButtonDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C03B5E462B296241297AA120FE927224 /* SpinnerButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E99EC64F3AD978A5DC3767CD86B8BBC /* SpinnerButtonAnimationView.swift */; };
+		C25D65A9EAD72E9B55F9B3A64A67E13B /* ArcsRotateChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D9712B60491F910AC2CD02BE37CA92 /* ArcsRotateChaseAnimation.swift */; };
+		CE6E682A6D7FE94DB9406BD3C8384145 /* LineSpinFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D80250BFD2FA1BB2084C20D34C297D /* LineSpinFadeAnimation.swift */; };
+		DA60344EEB6E29D7A5AD489D0185958D /* Pods-SSSwiftUISpinnerButtonDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B880073B82A47453243AFC670769862B /* Pods-SSSwiftUISpinnerButtonDemo-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8C6F145A57D3FB8206BC02568BEEE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC9F0D1F55E9380DB94198699F0659FD;
+			remoteInfo = SSSwiftUISpinnerButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06F98A67C2088AD1D5F34A1120140FF8 /* Pods-SSSwiftUISpinnerButtonDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSSwiftUISpinnerButtonDemo-Info.plist"; sourceTree = "<group>"; };
+		1D72B62FC9FC70DC4EC9B051ADC6C66A /* SSSwiftUISpinnerButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSSwiftUISpinnerButton-dummy.m"; sourceTree = "<group>"; };
+		20E100DCCE017276266DF9DBFD6178B8 /* SSSwiftUISpinnerButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SSSwiftUISpinnerButton-Info.plist"; sourceTree = "<group>"; };
+		21F8970714B8EB78415A44FDFFD894EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		23A54CBE2B45004E7F1BF3B65BFD5F4B /* SSSwiftUISpinnerButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSSwiftUISpinnerButton-prefix.pch"; sourceTree = "<group>"; };
+		23BBDB66D3A953CB43C6EFECCEB30844 /* SpinnerButtonViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinnerButtonViewStyle.swift; path = Sources/SSSwiftUISpinnerButton/SpinnerButtonViewStyle.swift; sourceTree = "<group>"; };
+		3C35F0C0D79DAF8E23130BBC477F3740 /* SSSwiftUISpinnerButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSSwiftUISpinnerButton.modulemap; sourceTree = "<group>"; };
+		40D80250BFD2FA1BB2084C20D34C297D /* LineSpinFadeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LineSpinFadeAnimation.swift; sourceTree = "<group>"; };
+		457F0608AE83D6F5BF621805EE06C2AE /* SSSwiftUISpinnerButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSSwiftUISpinnerButton.framework; path = SSSwiftUISpinnerButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48D9712B60491F910AC2CD02BE37CA92 /* ArcsRotateChaseAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArcsRotateChaseAnimation.swift; sourceTree = "<group>"; };
+		4BCCD93B4EAE75D850BECF072CF1F065 /* SSSwiftUISpinnerButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSSwiftUISpinnerButton.release.xcconfig; sourceTree = "<group>"; };
+		4E99EC64F3AD978A5DC3767CD86B8BBC /* SpinnerButtonAnimationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinnerButtonAnimationView.swift; path = Sources/SSSwiftUISpinnerButton/SpinnerButtonAnimationView.swift; sourceTree = "<group>"; };
+		5CC60E4E0EDFB187DC6F3B8AAADE0B49 /* Pods-SSSwiftUISpinnerButtonDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SSSwiftUISpinnerButtonDemo-frameworks.sh"; sourceTree = "<group>"; };
+		5F8B1F0D8BBA4F7EE3655E8BEBB1DFDF /* BallSpinChaseAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BallSpinChaseAnimation.swift; sourceTree = "<group>"; };
+		638BB588EDBB08D5AFD1958D1AEBAF9A /* SSSwiftUISpinnerButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSSwiftUISpinnerButton-umbrella.h"; sourceTree = "<group>"; };
+		68AB613917D4C1E19C8B7219FAB7824C /* Pods_SSSwiftUISpinnerButtonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SSSwiftUISpinnerButtonDemo.framework; path = "Pods-SSSwiftUISpinnerButtonDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC0556FDD13070815C62F0D9933B69D /* BallRotateFadeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BallRotateFadeAnimation.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		875DCED9B5D4F113BEFF40D786E69D02 /* SSSwiftUISpinnerButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSSwiftUISpinnerButton.debug.xcconfig; sourceTree = "<group>"; };
+		886263A340320201DA7E2AFA0D8715A3 /* Pods-SSSwiftUISpinnerButtonDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSSwiftUISpinnerButtonDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		92FFFACF64BE180C06845D5FFD5FD753 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9A934AC70FD41BFADCF9901A656D8F8C /* Pods-SSSwiftUISpinnerButtonDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SSSwiftUISpinnerButtonDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AF09B56010EDBB2763BB20CE783FB0C5 /* Pods-SSSwiftUISpinnerButtonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSSwiftUISpinnerButtonDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B880073B82A47453243AFC670769862B /* Pods-SSSwiftUISpinnerButtonDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSSwiftUISpinnerButtonDemo-dummy.m"; sourceTree = "<group>"; };
+		BCF3C98459DC7C79BA4FF4E7C79028B1 /* Pods-SSSwiftUISpinnerButtonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSSwiftUISpinnerButtonDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C43A0634462B0D75D9D102F2B495B1F1 /* Pods-SSSwiftUISpinnerButtonDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SSSwiftUISpinnerButtonDemo-umbrella.h"; sourceTree = "<group>"; };
+		C6289E9FA35294F1359B92D5EF1E9C89 /* SSSwiftUISpinnerButton.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SSSwiftUISpinnerButton.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E5014E674D41833C1D428CA893CB7072 /* SpinnerButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpinnerButton.swift; path = Sources/SSSwiftUISpinnerButton/SpinnerButton.swift; sourceTree = "<group>"; };
+		F917AFA2D13F90426C3AC6D77AECB987 /* Pods-SSSwiftUISpinnerButtonDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SSSwiftUISpinnerButtonDemo.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		168E08FB7AD3E8AB967DCAAAAE683AE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39098035928BB870C4117F59B4D20D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		383A853EB02D340AD4B8158909598770 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA7FE270EE7AB3BB8EF93B960B09935 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C020D4B8DF162F66872A936A508ACD1 /* Pods-SSSwiftUISpinnerButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F917AFA2D13F90426C3AC6D77AECB987 /* Pods-SSSwiftUISpinnerButtonDemo.modulemap */,
+				886263A340320201DA7E2AFA0D8715A3 /* Pods-SSSwiftUISpinnerButtonDemo-acknowledgements.markdown */,
+				9A934AC70FD41BFADCF9901A656D8F8C /* Pods-SSSwiftUISpinnerButtonDemo-acknowledgements.plist */,
+				B880073B82A47453243AFC670769862B /* Pods-SSSwiftUISpinnerButtonDemo-dummy.m */,
+				5CC60E4E0EDFB187DC6F3B8AAADE0B49 /* Pods-SSSwiftUISpinnerButtonDemo-frameworks.sh */,
+				06F98A67C2088AD1D5F34A1120140FF8 /* Pods-SSSwiftUISpinnerButtonDemo-Info.plist */,
+				C43A0634462B0D75D9D102F2B495B1F1 /* Pods-SSSwiftUISpinnerButtonDemo-umbrella.h */,
+				AF09B56010EDBB2763BB20CE783FB0C5 /* Pods-SSSwiftUISpinnerButtonDemo.debug.xcconfig */,
+				BCF3C98459DC7C79BA4FF4E7C79028B1 /* Pods-SSSwiftUISpinnerButtonDemo.release.xcconfig */,
+			);
+			name = "Pods-SSSwiftUISpinnerButtonDemo";
+			path = "Target Support Files/Pods-SSSwiftUISpinnerButtonDemo";
+			sourceTree = "<group>";
+		};
+		2F2FE7A5521A276E499EEDCC6CFC4EC8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AEFF512E6D0070947C70F110FACDAB9 /* SSSwiftUISpinnerButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		453C68C99D37F3F31F58ACB070F7AD8A /* SpinnerButtonAnimationStyle */ = {
+			isa = PBXGroup;
+			children = (
+				48D9712B60491F910AC2CD02BE37CA92 /* ArcsRotateChaseAnimation.swift */,
+				6FC0556FDD13070815C62F0D9933B69D /* BallRotateFadeAnimation.swift */,
+				5F8B1F0D8BBA4F7EE3655E8BEBB1DFDF /* BallSpinChaseAnimation.swift */,
+				40D80250BFD2FA1BB2084C20D34C297D /* LineSpinFadeAnimation.swift */,
+			);
+			name = SpinnerButtonAnimationStyle;
+			path = Sources/SSSwiftUISpinnerButton/SpinnerButtonAnimationStyle;
+			sourceTree = "<group>";
+		};
+		46DD3909B1C6867932F74D80CA09E157 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				21F8970714B8EB78415A44FDFFD894EE /* LICENSE */,
+				92FFFACF64BE180C06845D5FFD5FD753 /* README.md */,
+				C6289E9FA35294F1359B92D5EF1E9C89 /* SSSwiftUISpinnerButton.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9AEFF512E6D0070947C70F110FACDAB9 /* SSSwiftUISpinnerButton */ = {
+			isa = PBXGroup;
+			children = (
+				E5014E674D41833C1D428CA893CB7072 /* SpinnerButton.swift */,
+				4E99EC64F3AD978A5DC3767CD86B8BBC /* SpinnerButtonAnimationView.swift */,
+				23BBDB66D3A953CB43C6EFECCEB30844 /* SpinnerButtonViewStyle.swift */,
+				46DD3909B1C6867932F74D80CA09E157 /* Pod */,
+				453C68C99D37F3F31F58ACB070F7AD8A /* SpinnerButtonAnimationStyle */,
+				C24EBCBB2156BA40EA66C32FA630B3EF /* Support Files */,
+			);
+			name = SSSwiftUISpinnerButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0CC15797B9A3382DFAED9669424FB13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68AB613917D4C1E19C8B7219FAB7824C /* Pods_SSSwiftUISpinnerButtonDemo.framework */,
+				457F0608AE83D6F5BF621805EE06C2AE /* SSSwiftUISpinnerButton.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C24EBCBB2156BA40EA66C32FA630B3EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C35F0C0D79DAF8E23130BBC477F3740 /* SSSwiftUISpinnerButton.modulemap */,
+				1D72B62FC9FC70DC4EC9B051ADC6C66A /* SSSwiftUISpinnerButton-dummy.m */,
+				20E100DCCE017276266DF9DBFD6178B8 /* SSSwiftUISpinnerButton-Info.plist */,
+				23A54CBE2B45004E7F1BF3B65BFD5F4B /* SSSwiftUISpinnerButton-prefix.pch */,
+				638BB588EDBB08D5AFD1958D1AEBAF9A /* SSSwiftUISpinnerButton-umbrella.h */,
+				875DCED9B5D4F113BEFF40D786E69D02 /* SSSwiftUISpinnerButton.debug.xcconfig */,
+				4BCCD93B4EAE75D850BECF072CF1F065 /* SSSwiftUISpinnerButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SSSwiftUISpinnerButton";
+			sourceTree = "<group>";
+		};
+		CEB52D895399B1FA7F06DDFF70AB2EA4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C020D4B8DF162F66872A936A508ACD1 /* Pods-SSSwiftUISpinnerButtonDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				2F2FE7A5521A276E499EEDCC6CFC4EC8 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C0CC15797B9A3382DFAED9669424FB13 /* Products */,
+				CEB52D895399B1FA7F06DDFF70AB2EA4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6C02734DBEDBA2CB3B917F165C11AAD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A311B480923931DC744EBB27C7B31313 /* SSSwiftUISpinnerButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5B902A833490679F1B7F7AE35314CA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B44D9EE8797DE058D317B9B27DEB09CC /* Pods-SSSwiftUISpinnerButtonDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AC9F0D1F55E9380DB94198699F0659FD /* SSSwiftUISpinnerButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED6B977F49BC3E2F0E3916A55F2569FF /* Build configuration list for PBXNativeTarget "SSSwiftUISpinnerButton" */;
+			buildPhases = (
+				6C02734DBEDBA2CB3B917F165C11AAD1 /* Headers */,
+				F7903348CD139E0565D48F7A79D4F51D /* Sources */,
+				168E08FB7AD3E8AB967DCAAAAE683AE1 /* Frameworks */,
+				981D934DCF0AADFC1D83225284EC4219 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSSwiftUISpinnerButton;
+			productName = SSSwiftUISpinnerButton;
+			productReference = 457F0608AE83D6F5BF621805EE06C2AE /* SSSwiftUISpinnerButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE6325BC9B07C519E6FB27657FB630E3 /* Pods-SSSwiftUISpinnerButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994F47F3D652905DDE93E1D9FB084C48 /* Build configuration list for PBXNativeTarget "Pods-SSSwiftUISpinnerButtonDemo" */;
+			buildPhases = (
+				B5B902A833490679F1B7F7AE35314CA3 /* Headers */,
+				5923284B0E19F77EBBFAEFAA210BD8F2 /* Sources */,
+				383A853EB02D340AD4B8158909598770 /* Frameworks */,
+				3A945A826022F7CF2FFFB8B63E325999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B0BB1D398921A0247583F6C4FB355A9 /* PBXTargetDependency */,
+			);
+			name = "Pods-SSSwiftUISpinnerButtonDemo";
+			productName = "Pods-SSSwiftUISpinnerButtonDemo";
+			productReference = 68AB613917D4C1E19C8B7219FAB7824C /* Pods_SSSwiftUISpinnerButtonDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C0CC15797B9A3382DFAED9669424FB13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE6325BC9B07C519E6FB27657FB630E3 /* Pods-SSSwiftUISpinnerButtonDemo */,
+				AC9F0D1F55E9380DB94198699F0659FD /* SSSwiftUISpinnerButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A945A826022F7CF2FFFB8B63E325999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		981D934DCF0AADFC1D83225284EC4219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5923284B0E19F77EBBFAEFAA210BD8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA60344EEB6E29D7A5AD489D0185958D /* Pods-SSSwiftUISpinnerButtonDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7903348CD139E0565D48F7A79D4F51D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25D65A9EAD72E9B55F9B3A64A67E13B /* ArcsRotateChaseAnimation.swift in Sources */,
+				28497D1CB9006BBE28F13BF2F5BC1F7B /* BallRotateFadeAnimation.swift in Sources */,
+				17171DF024650A170FB16827056F1641 /* BallSpinChaseAnimation.swift in Sources */,
+				CE6E682A6D7FE94DB9406BD3C8384145 /* LineSpinFadeAnimation.swift in Sources */,
+				733BD72A392B56C1B9E9AA5E6AF41267 /* SpinnerButton.swift in Sources */,
+				C03B5E462B296241297AA120FE927224 /* SpinnerButtonAnimationView.swift in Sources */,
+				7CC1478F67D30393EDDB89B261E94525 /* SpinnerButtonViewStyle.swift in Sources */,
+				32ED36F6CD7EA11C9AF0DE99C722E7C4 /* SSSwiftUISpinnerButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B0BB1D398921A0247583F6C4FB355A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSSwiftUISpinnerButton;
+			target = AC9F0D1F55E9380DB94198699F0659FD /* SSSwiftUISpinnerButton */;
+			targetProxy = F8C6F145A57D3FB8206BC02568BEEE29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0375DD6B939103092E8E61A90D99C798 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF3C98459DC7C79BA4FF4E7C79028B1 /* Pods-SSSwiftUISpinnerButtonDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SSSwiftUISpinnerButtonDemo/Pods-SSSwiftUISpinnerButtonDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSSwiftUISpinnerButtonDemo/Pods-SSSwiftUISpinnerButtonDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AC9ED9172F6A08E24EBC2B26DEDCAEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875DCED9B5D4F113BEFF40D786E69D02 /* SSSwiftUISpinnerButton.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSSwiftUISpinnerButton/SSSwiftUISpinnerButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSSwiftUISpinnerButton/SSSwiftUISpinnerButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSSwiftUISpinnerButton/SSSwiftUISpinnerButton.modulemap";
+				PRODUCT_MODULE_NAME = SSSwiftUISpinnerButton;
+				PRODUCT_NAME = SSSwiftUISpinnerButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C5E1DB6CA5F1551E9075E54CDC8D81C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF09B56010EDBB2763BB20CE783FB0C5 /* Pods-SSSwiftUISpinnerButtonDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SSSwiftUISpinnerButtonDemo/Pods-SSSwiftUISpinnerButtonDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SSSwiftUISpinnerButtonDemo/Pods-SSSwiftUISpinnerButtonDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7920D3FFA7E645B5D9BF8E22E7F94BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BCCD93B4EAE75D850BECF072CF1F065 /* SSSwiftUISpinnerButton.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSSwiftUISpinnerButton/SSSwiftUISpinnerButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSSwiftUISpinnerButton/SSSwiftUISpinnerButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SSSwiftUISpinnerButton/SSSwiftUISpinnerButton.modulemap";
+				PRODUCT_MODULE_NAME = SSSwiftUISpinnerButton;
+				PRODUCT_NAME = SSSwiftUISpinnerButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994F47F3D652905DDE93E1D9FB084C48 /* Build configuration list for PBXNativeTarget "Pods-SSSwiftUISpinnerButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5E1DB6CA5F1551E9075E54CDC8D81C4 /* Debug */,
+				0375DD6B939103092E8E61A90D99C798 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED6B977F49BC3E2F0E3916A55F2569FF /* Build configuration list for PBXNativeTarget "SSSwiftUISpinnerButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC9ED9172F6A08E24EBC2B26DEDCAEC /* Debug */,
+				D7920D3FFA7E645B5D9BF8E22E7F94BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
