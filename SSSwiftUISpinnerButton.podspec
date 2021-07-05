@@ -17,8 +17,8 @@ Pod::Spec.new do |spec|
   spec.author       = { "Chaitali Lad" => "chaitali.l@simformsolutions.com" }
   spec.platform     = :ios
   spec.ios.deployment_target = "13.0"
-
-  spec.source            = { :git => "https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton", :tag => "#{spec.version}" } 
+  spec.swift_versions         = '5.0'
+  spec.source            = { :git => "https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton.git", :tag => "#{spec.version}" } 
   spec.source_files  = "SpinnerButton/*.swift", "SpinnerButton/**/*.swift"
   #spec.documentation_url = 'docs/index.html'
 
