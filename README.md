@@ -44,7 +44,7 @@ SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spin
     
  - Add state variable to manage spinner button start and stop animation
 
-          @State var isSpinnerButtonAnimating: Bool = false
+       @State var isSpinnerButtonAnimating: Bool = false
 
  - Add Spinner button:
 
@@ -65,40 +65,40 @@ SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spin
 **Stop Animation**
 - To stop the spinner button animation, simple toggle the state variable `isSpinnerButtonAnimating` value.
 
-        isSpinnerButtonAnimating.toggle()
+      isSpinnerButtonAnimating.toggle()
 
 **Spinner button animation style**
 - You can select from different animation styles 
 - Every animation style have properties such as count, size which can be modified.
 
-        SpinnerButton(buttonAction: {
-                /// Action to perform
-            }, isAnimating: $isSpinnerButtonAnimating, 
-               animationType: SpinnerButtonAnimationStyle.lineSpinFade(count: 8, width: 0)) {
-                /// Add content in button
-            }
+      SpinnerButton(buttonAction: {
+               /// Action to perform
+         }, isAnimating: $isSpinnerButtonAnimating, 
+            animationType: SpinnerButtonAnimationStyle.lineSpinFade(count: 8, width: 0)) {
+                 /// Add content in button
+         }
 **Spinner button customisation**
 - You can modify view of the spinner button using `SpinnerButtonViewStyle` 
 - Initialise variable with type `SpinnerButtonViewStyle` to design button:
  
-        private var buttonStyleWithBasicDesign: SpinnerButtonViewStyle = SpinnerButtonViewStyle(
+      private var buttonStyleWithBasicDesign: SpinnerButtonViewStyle = SpinnerButtonViewStyle(
             width: 300, 
             height: 50, 
             cornerRadius: 5, 
             backgroundColor: .black, 
             spinningButtonBackgroundColor: .black, 
             spinningStrokeColor: .white
-        )
+      )
 
 - Assign it to `buttonstyle`:
  
-        SpinnerButton(buttonAction: {
-                /// Action to perform
-            }, isAnimating: $isSpinnerButtonAnimating, 
-               buttonStyle: buttonStyleWithBasicDesign,
-               animationType: SpinnerButtonAnimationStyle.lineSpinFade(count: 8, width: 0)) {
-                /// Add content in button
-            }
+      SpinnerButton(buttonAction: {
+              /// Action to perform
+         }, isAnimating: $isSpinnerButtonAnimating, 
+            buttonStyle: buttonStyleWithBasicDesign,
+            animationType: SpinnerButtonAnimationStyle.lineSpinFade(count: 8, width: 0)) {
+              /// Add content in button
+         }
 
 # Swift Library:
 -    Check out our Swift Library for Spinner Button - [SSSpinnerButton](https://github.com/SimformSolutionsPvtLtd/SSSpinnerButton)
