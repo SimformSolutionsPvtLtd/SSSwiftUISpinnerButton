@@ -44,18 +44,6 @@ SSSwiftUISpinnerButton is an open-source library in SwiftUI to add different spi
              .package(url: "https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton.git", from: "0.0.2")
          ]
 
-####  Carthage
--   [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
-   
-        $ brew update
-        $ brew install carthage
-
--   To integrate `SSSwiftUISpinnerButton` into your Xcode project using Carthage, add the following line to your `Cartfile`:
- 
-     github "mobile-simformsolutions/SSSwiftUISpinnerButton"
-
--   Run `carthage` to build and drag the `SSSwiftUISpinnerButton` (Sources/SSSwiftUISpinnerButton) into your Xcode project.
-
 # Usage Examples
 
    **Add Spinner Button**
