@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SSSwiftUISpinnerButton"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "Button with different spinner animation styles."
   spec.description  = "SpinnerButton is a custom button with different spinner animation styles."
   spec.homepage     = "https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton"
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "13.0"
   spec.swift_versions         = '5.0'
   spec.source            = { :git => "https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton.git", :tag => "#{spec.version}" } 
-  spec.source_files  = "SpinnerButton/*.swift", "SpinnerButton/**/*.swift"
+  spec.source_files  = "Sources/**/*"
   #spec.documentation_url = 'docs/index.html'
 
 end

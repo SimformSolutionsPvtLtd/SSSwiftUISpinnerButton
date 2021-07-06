@@ -3,7 +3,7 @@
 # SSSwiftUISpinnerButton
 
 
-SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spinning animation to button.
+SSSwiftUISpinnerButton is an open-source library in SwiftUI to add different spinning animation to button.
 
 [![Platform][platform-image]][platform-url]
 [![swiftUI](https://img.shields.io/badge/-swiftUI-blue)](https://developer.apple.com/documentation/swiftui)
@@ -16,16 +16,15 @@ SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spin
 # Features!
   - Various spinner animation styles
   - Rounded button on spinning animation
-  - CocoaPods
 
 # Requirements
   - iOS 13.0+
   - Xcode 11+
 
 # Installation
- **CocoaPods**
+#### CocoaPods
  
-- You can use CocoaPods to install SSSwiftUISpinnerButton by adding it to your Podfile:
+- You can use CocoaPods to install `SSSwiftUISpinnerButton` by adding it to your Podfile:
 
        use_frameworks!
        pod 'SSSwiftUISpinnerButton'
@@ -35,8 +34,27 @@ SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spin
        import SSSwiftUISpinnerButton
 
 **Manually**
--   Download and drop **SSSwiftUISpinnerButton/SpinnerButton** folder in your project.
+-   Download and drop **SSSwiftUISpinnerButton/Sources** folder in your project.
 -   Congratulations!
+
+#### Swift Package Manager
+-   When using Xcode 11 or later, you can install `SSSwiftUISpinnerButton` by going to your Project settings > `Swift Packages` and add the repository by providing the GitHub URL. Alternatively, you can go to `File` > `Swift Packages` > `Add Package Dependencies...`
+
+         dependencies: [
+             .package(url: "https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton.git", from: "0.0.2")
+         ]
+
+####  Carthage
+-   [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
+   
+        $ brew update
+        $ brew install carthage
+
+-   To integrate `SSSwiftUISpinnerButton` into your Xcode project using Carthage, add the following line to your `Cartfile`:
+ 
+     github "mobile-simformsolutions/SSSwiftUISpinnerButton"
+
+-   Run `carthage` to build and drag the `SSSwiftUISpinnerButton` (Sources/SSSwiftUISpinnerButton) into your Xcode project.
 
 # Usage Examples
 
@@ -63,13 +81,13 @@ SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spin
 - Animation will start as soon as you will tap on the button (`isSpinnerButtonAnimating` state variable will be set true).
    
 **Stop Animation**
-- To stop the spinner button animation, simple toggle the state variable `isSpinnerButtonAnimating` value.
+- To stop the spinner button animation, simply toggle the state variable `isSpinnerButtonAnimating` value.
 
       isSpinnerButtonAnimating.toggle()
 
 **Spinner button animation style**
 - You can select from different animation styles 
-- Every animation style have properties such as count, size which can be modified.
+- Every animation style has properties such as count, size, etc which can be modified.
 
       SpinnerButton(buttonAction: {
                /// Action to perform
@@ -106,7 +124,7 @@ SSSwiftUISpinnerButton is a open-source library in SwiftUI to add different spin
 #  Meta
 -    Distributed under the MIT license. See LICENSE for more information.
 
-# Inspired by: 
+# Inspired By: 
 -   Spinner animations inspired from [iActivityIndicator](https://github.com/MojtabaHs/iActivityIndicator)
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg

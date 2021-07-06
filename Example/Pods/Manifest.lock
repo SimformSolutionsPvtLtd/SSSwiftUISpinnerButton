@@ -1,0 +1,16 @@
+PODS:
+  - SSSwiftUISpinnerButton (0.0.2)
+
+DEPENDENCIES:
+  - SSSwiftUISpinnerButton (from `../`)
+
+EXTERNAL SOURCES:
+  SSSwiftUISpinnerButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSSwiftUISpinnerButton: fb2c15c4455311962db6fb58627507a19499a20b
+
+PODFILE CHECKSUM: 91de88df75cf889d0215da32bcf49596e3245789
+
+COCOAPODS: 1.10.1
