@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SSSwiftUISpinnerButton"
-  spec.version      = "0.0.3"
+  spec.version      = "1.0.0"
   spec.summary      = "Button with different spinner animation styles."
   spec.description  = "SpinnerButton is a custom button with different spinner animation styles."
   spec.homepage     = "https://github.com/mobile-simformsolutions/SSSwiftUISpinnerButton"
